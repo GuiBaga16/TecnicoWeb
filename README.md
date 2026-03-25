@@ -1,49 +1,191 @@
-# TecnicoWeb
+# 📚 TecnicoWeb - Guia de Git
 
-Configuração Inicial:
+Este repositório contém um resumo prático dos principais comandos do Git para uso no dia a dia.
 
+---
 
-git config --global user.name "Seu Nome" - Define seu nome para os commits.
-git config --global user.email "algo@exemplo.com" - Define seu e-mail.
-git config --list - Lista todas as configurações.
-Iniciando um Repositório:
+## ⚙️ Configuração Inicial
 
+```bash
+git config --global user.name "Seu Nome"
+```
 
-git init - Cria um novo repositório Git local na pasta atual.
-git clone - Clonar um repositório remoto existente.
-Fluxo de Trabalho (Stage e Commit):
+Define seu nome para os commits.
 
+```bash
+git config --global user.email "algo@exemplo.com"
+```
 
-git status - Mostra o estado dos arquivos (modificados, na stage, etc.).
-git add - Adiciona um arquivo específico à stage (área de preparação).
-git add . - Adiciona todos os arquivos modificados à stage.
-git commit -m "mensagem" - Salva as alterações da stage no repositório com uma mensagem.
-git commit -am "mensagem" - Adiciona arquivos rastreados e faz o commit de uma só vez.
-Branches (Ramos):
+Define seu e-mail.
 
+```bash
+git config --list
+```
 
-git branch - Lista os branches existentes.
-git branch - Cria um novo branch.
-git checkout - Alterna para o branch especificado.
-git checkout -b - Cria e alterna para um novo branch ao mesmo tempo.
-Repositórios Remotos:
+Lista todas as configurações atuais.
 
+---
 
-git remote add origin - Conecta o repositório local a um remoto (ex: GitHub).
-git push -u origin - Envia os commits locais para o repositório remoto.
-git pull - Atualiza o repositório local com as mudanças do remoto.
-Mesclagem e Histórico:
+## 🚀 Iniciando um Repositório
 
+```bash
+git init
+```
 
-git log - Mostra o histórico de commits.
-git log --oneline --graph - Mostra o histórico de forma simplificada e gráfica.
-git merge - Mescla um branch no branch atual.
-Tags:
+Cria um novo repositório Git local na pasta atual.
 
+```bash
+git clone <url>
+```
 
-git tag - Cria uma tag leve para marcar uma versão.
-Desfazendo Ações:
+Clona um repositório remoto existente.
 
+---
 
-git reset --hard HEAD~1 - Desfaz o último commit e remove as alterações locais (perigoso!).
-git stash - Guarda alterações temporariamente sem fazer commit.
+## 🔄 Fluxo de Trabalho (Stage e Commit)
+
+```bash
+git status
+```
+
+Mostra o estado dos arquivos.
+
+```bash
+git add <arquivo>
+```
+
+Adiciona um arquivo específico à stage.
+
+```bash
+git add .
+```
+
+Adiciona todos os arquivos modificados à stage.
+
+```bash
+git commit -m "mensagem"
+```
+
+Salva as alterações com uma mensagem.
+
+```bash
+git commit -am "mensagem"
+```
+
+Adiciona arquivos rastreados e faz commit direto.
+
+---
+
+## 🌿 Branches (Ramos)
+
+```bash
+git branch
+```
+
+Lista os branches existentes.
+
+```bash
+git branch <nome>
+```
+
+Cria um novo branch.
+
+```bash
+git checkout <nome>
+```
+
+Alterna para um branch.
+
+```bash
+git checkout -b <nome>
+```
+
+Cria e já troca para o novo branch.
+
+---
+
+## 🌐 Repositórios Remotos
+
+```bash
+git remote add origin <url>
+```
+
+Conecta ao repositório remoto.
+
+```bash
+git push -u origin <branch>
+```
+
+Envia commits para o remoto.
+
+```bash
+git pull
+```
+
+Atualiza o repositório local com o remoto.
+
+---
+
+## 🔀 Mesclagem e Histórico
+
+```bash
+git log
+```
+
+Mostra histórico completo.
+
+```bash
+git log --oneline --graph
+```
+
+Histórico simplificado e visual.
+
+```bash
+git merge <branch>
+```
+
+Mescla um branch no atual.
+
+---
+
+## 🏷️ Tags
+
+```bash
+git tag <nome>
+```
+
+Cria uma tag para marcar versões.
+
+---
+
+## ⚠️ Desfazendo Ações
+
+```bash
+git reset --hard HEAD~1
+```
+
+Desfaz o último commit (CUIDADO ⚠️).
+
+```bash
+git stash
+```
+
+Salva alterações temporariamente.
+
+---
+
+## 💡 Dicas de Uso
+
+* Sempre escreva mensagens de commit claras
+* Use branches para novas funcionalidades
+* Evite usar `--hard` sem entender o impacto
+* Faça commits pequenos e frequentes
+
+---
+
+## 📌 Objetivo
+
+Este guia serve como referência rápida para desenvolvimento com Git no dia a dia.
+
+---
+
