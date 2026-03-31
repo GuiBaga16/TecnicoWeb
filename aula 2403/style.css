@@ -1,0 +1,92 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: sans-serif;
+    background: #0f172a;
+    color: white;
+    padding: 20px;
+}
+
+/* Container em coluna */
+.container {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* CONTAINER GERAL */
+body > * {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* SEPARAÇÃO */
+hr {
+    margin: 25px 0;
+    border: none;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* LABEL */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* INPUTS */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #1e293b;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border: 1px solid #38bdf8;
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
+}
+
+/* PARÁGRAFOS RESULTADOS */
+p {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* BOTÕES */
+button {
+    padding: 10px 1px;
+    margin: 5px 5px 5px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #38bdf8;
+    color: #0f172a;
+    font-weight: bold;
+    transition: 0.2s;
+    width: 30%;
+}
+
+button:hover {
+    background: #0ea5e9;
+    transform: scale(1.05);
+}
+
+
