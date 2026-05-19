@@ -8,7 +8,7 @@ class Database
     public function __construct()
     {
         $host = "localhost";
-        $porta = "5432";
+        $porta = "4777";
         $database = "milkTrack";
         $usuario = "postgres";
         $senha = "postgres";
